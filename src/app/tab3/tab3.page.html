@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      购物车
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="cart-list">
+    <div class="cart-item" *ngFor="let item of plist">
+
+      <div class="item-left">
+        <div class="item-chk">
+          <ion-checkbox color="danger"></ion-checkbox>
+        </div>
+        <div class="item-img">
+          <img [src]="config.dn+item.pic" alt="">
+        </div>
+      </div>
+
+      <div class="item-right">
+        <div class="item-title">
+          <span>{{item.title}}</span>
+        </div>
+        <div class="item-info">
+          <div class="item-price">
+            <span>{{item.price}}</span>
+          </div>
+          <div class="item-num">
+            <ion-buttons slot="end">
+              <ion-button (click)="onClick()">
+                <ion-icon name="remove-outline"></ion-icon>
+              </ion-button>
+              <input type="text" value="1" readonly>
+              <ion-button (click)="onClick()">
+                <ion-icon name="add"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-checkbox color="danger"></ion-checkbox>全选：
+        <span>合计：</span>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button fill="solid" color="danger">
+          <ion-icon slot="start" name="cart"></ion-icon>
+          去结算
+        </ion-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

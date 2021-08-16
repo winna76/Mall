@@ -1,0 +1,169 @@
+ion-segment-button{
+    width: 12rem;
+    height: 3.8rem;
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    .cart{
+        width: 10rem;
+        position: relative;
+        ion-icon{
+            font-size: 2.8rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        ion-badge{
+            position: absolute;
+            left: 4.5rem;
+            top: .3em;
+            padding: 2px 5px;
+        }
+    }
+    .addcart{
+        background-color: orange;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        flex: 1;
+        height: 5rem;
+        line-height: 5rem;
+    }
+    .buy{
+        background-color: red;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        flex: 1;
+        height: 5rem;
+        line-height: 5rem;
+    }
+}
+.p_content{  
+    background-color: #8f8f8f;
+    .content1{
+        .p_img{
+          width: 100%;
+          height: 20rem;
+          img{
+            width: 100%;
+            height: 20rem;
+          }
+        }
+        .p_info{
+            background-color: #fff;
+            margin-bottom: 1rem;
+            .p_title{
+                margin: .5rem;
+                padding: .5rem;
+                h2{
+                    font-size: 1.6rem;
+                    line-height: 1.5;
+                }
+                p{
+                    color: #666;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                }
+            }
+            .p_price{
+                margin: .5rem;
+                padding: .5rem;
+                .s_price{
+                    font-size: 1.6rem;
+                    .price{
+                        color: red;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        margin-right: 2rem;
+                    }
+                   
+                } 
+                .o_price{
+                       text-decoration: line-through;
+                    }
+            }
+        }
+
+        .p_attr{
+            padding: .5rem;
+            background-color: #fff;
+            font-size: 1.6rem;
+            .attr{
+                display: flex;
+                strong{
+                    width: 9rem;
+                    margin: .5rem;
+                    padding: .5rem 1rem;
+                }
+                .r_attr{
+                    
+                    span{
+                        border: 1px solid #eee;
+                        margin: .3rem .5rem;
+                        padding: .5rem 1rem;
+                        display: inline-block;
+                    }
+                    .active{
+                        border: 2px solid red;
+                    }
+                }
+            }
+            .number{
+                margin-top: .5rem;
+                display: flex;
+                text-align: center;
+                strong{
+                    width: 7rem;
+                    margin: .5rem;
+                    padding: .5rem 1rem;
+                }
+                .num{
+                    display: flex;
+                    flex: 1;
+                    width: 100%;
+                    float: right;    
+                    margin-right: 4rem;             
+                    font-size: 1.4rem;
+                    margin: .5rem;
+                    .sub,.plus{
+                        width: 4rem;
+                        border: 1px solid #eee;
+                        height: 2.8rem;
+                        line-height: 2.8rem;
+                        background-color: #8f8f8f;
+                        text-align: center;
+                    }
+                    .num_value{
+                        flex: 1;
+                        height: 2.8rem;
+                        line-height: 2.8rem;
+                        input{
+                            height: 2.8rem;
+                            line-height: 2.8rem;
+                            width: 100%;
+                            border: 1px solid #eee;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .fee{
+                display: flex;
+                strong{
+                    width: 7rem;
+                    margin: .5rem;
+                    padding: .5rem 1rem;
+                }
+                span{
+                    margin: 1rem;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,54 @@
+ion-header{
+    margin-top: 10px;
+    align-items: center;
+}
+
+.sub-menu{
+    --min-height: 3rem;
+    .sub-nav{
+        border-top: 1px solid #eee;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        div{
+            flex: 1;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .actived{
+                color:red;
+        }
+   }
+}
+.search-result{
+    width: 100%;
+    .result-list{
+        width: 100%;
+        .restult-item{
+            height: 9rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            .item-left{
+                width: 9rem;
+                padding: .8rem;
+                img{
+                   width: 7.5rem;
+                   height: 7.5rem;
+                }
+            }
+            .item-right{
+                flex: 1;
+                h3{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    margin-top: 0;
+                }
+                p{
+                    font-size: 1.4rem;
+                    color: red;
+                }
+            }
+        }
+    }
+}

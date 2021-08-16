@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (tap)="goback()">
+        <ion-icon name="chevron-back-sharp" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-searchbar placeholder="请输入关键词" animated></ion-searchbar>
+
+    <ion-buttons slot="end">
+      <ion-button (tap)="search()" color="dark">
+        搜索
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar class="sub-menu" *ngIf="flag">
+    <div class="sub-nav">
+      <div>综合</div>
+      <div>销量</div>
+      <div>价格</div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="search-content" *ngIf="!flag">
+    <!-- 搜索词 -->
+    <div class="search-hot">
+      <div class="hot-title">
+        <span>热搜</span>
+      </div>
+      <div class="hot-content">
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+        <span>衣服</span>
+      </div>
+    </div>
+    <!-- 历史搜索 -->
+    <div class="search-his">
+      <div class="his-title">
+        <span>历史搜索</span>
+      </div>
+      <div class="his-content">
+        <ion-list lines="full">
+          <ion-item>
+            <ion-label>男士服装</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>男士服装</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>男士服装</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>男士服装</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>男士服装</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </div>
+
+  <!-- 搜索详情结果 -->
+
+  <div class="search-result" *ngIf="flag">
+    <div class="result-list">
+      <div class="restult-item">
+        <div class="item-left">
+          <img src="/assets/plist/list1.jpg" alt="">
+        </div>
+        <div class="item-right">
+          <h3>商品标题商品标题商品标题商品标题商品标题</h3>
+          <p>价格：58元</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</ion-content>
